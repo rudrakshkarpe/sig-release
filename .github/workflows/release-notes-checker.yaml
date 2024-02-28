@@ -48,7 +48,7 @@ jobs:
       - name: Run Tense Checks
         run: |
           # TODO: only run on changed files
-          pip install spacy
+          pip3 install spacy
           python .github/workflows/check-tense.py releases/release-1.30/release-notes/maps || true
       # Check punctionation
       - name:  Run Punctionation Check
