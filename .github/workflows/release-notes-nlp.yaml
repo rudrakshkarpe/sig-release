@@ -49,6 +49,7 @@ jobs:
         run: |
           # TODO: only run on changed files
           pip3 install spacy
+          python -m spacy download en_core_web_sm
           python .github/workflows/check-tense.py releases/release-1.30/release-notes/maps || true
       # Check punctionation
       - name:  Run Punctionation Check
